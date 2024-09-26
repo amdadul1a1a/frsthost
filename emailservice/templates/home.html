@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakpion - Email Marketing Made Easy</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Email Marketing Made Easy</h1>
+        <p>Send bulk emails with Dakpion's powerful and easy-to-use platform.</p>
+        <button><a href="{% url 'register' %}">Sign Up for Free</a></button>
+    </section>
+
+    <div class="container">
+        <div class="service-warpper">
+            <div class="service">
+                <h1>Key featurer & why chose Dakpion<span></span></h1>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa fa-envelope"></i>
+                        <h2>Easy Email Sending</h2>
+                        <p>Send bulk emails with just a few clicks.</p>
+                    </div>  
+                    <div class="card">
+                        <i class="fas fa-user-alt"></i>
+                        <h2>Personalization</h2>
+                        <p>Customize your emails with our intuitive editor.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-skating"></i>
+                        <h2>Real-time Tracking</h2>
+                        <p>Monitor your email performance in real-time.</p>
+                    </div>  
+                    <div class="card">
+                        <i class="fas fa-user-lock"></i>
+                        <h2>Cost-Effective</h2>
+                        <p>Send emails at a fraction of the cost.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h2>Secure and Reliable</h2>
+                        <p>Our platform ensures high deliverability rates.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-phone"></i>
+                        <h2>24/7 Support</h2>
+                        <p>Get help whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <h2>Get Started Today!</h2>
+        <button><a href="{% url 'register' %}">Sign Up for Free</a></button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dakpion. All rights reserved.</p>
+    </footer>
+</body>
+</html>

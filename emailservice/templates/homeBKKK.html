@@ -1,0 +1,26 @@
+<!-- templates/home.html -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Dakpion!</h1>
+
+    <!-- Display a link to the dashboard -->
+    <p>
+        <a href="{% url 'dashboard' %}">Go to Dashboard</a>
+    </p>
+
+    <!-- Display links to registration and login pages -->
+    <p>
+        New user? <a href="{% url 'register' %}">Register</a> here.
+    </p>
+    <p>
+        Already have an account? <a href="{% url 'login' %}">Log in</a>.
+    </p>
+
+</body>
+</html>

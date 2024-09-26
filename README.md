@@ -1,2 +1,1 @@
-# frsthost
-dakpion
+THis is bullk email service provider
